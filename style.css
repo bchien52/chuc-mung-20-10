@@ -1,0 +1,135 @@
+:root{
+  --bg1:#f4f8fc;--bg2:#d9e7f3;--card:#ffffffe6;--ink:#12191e;--muted:#4f6b82;
+  --accent:#014675;--accent2:#2f84c4;--line:#c3d6e8;--shadow:0 20px 50px -22px #01467599;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg1:#0a131c;--bg2:#10253a;--card:#12202fe0;--ink:#eaf3fb;--muted:#9db8d0;
+    --accent:#4ea1e3;--accent2:#8dc6f5;--line:#25415a;--shadow:0 20px 50px -20px #000b;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg1:#0a131c;--bg2:#10253a;--card:#12202fe0;--ink:#eaf3fb;--muted:#9db8d0;
+  --accent:#4ea1e3;--accent2:#8dc6f5;--line:#25415a;--shadow:0 20px 50px -20px #000b;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+html,body{min-height:100%}
+body{
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color:var(--ink);background:linear-gradient(160deg,var(--bg1),var(--bg2));
+  background-attachment:fixed;overflow-x:hidden;
+}
+#petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.petal{
+  position:absolute;top:-30px;
+  background:radial-gradient(circle at 30% 30%,var(--accent2),var(--accent));
+  border-radius:80% 0 80% 0;opacity:.75;animation:fall linear infinite;
+}
+@keyframes fall{
+  0%{transform:translate3d(0,-10vh,0) rotate(0deg)}
+  100%{transform:translate3d(var(--dx),110vh,0) rotate(540deg)}
+}
+main{
+  position:relative;z-index:1;max-width:760px;margin:0 auto;
+  padding:48px 20px 64px;display:flex;flex-direction:column;align-items:center;gap:28px;
+}
+header{text-align:center;display:flex;flex-direction:column;align-items:center}
+.date{
+  display:inline-block;padding:6px 16px;border-radius:999px;
+  background:var(--card);border:1px solid var(--line);
+  font-size:.85rem;font-weight:600;letter-spacing:.12em;color:var(--accent);
+}
+h1{
+  font-family:"Dancing Script","Brush Script MT",cursive;
+  font-size:clamp(2.6rem,9vw,4.6rem);line-height:1.1;margin-top:14px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.logo-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:#fff;border-radius:26px;padding:10px 22px;margin-bottom:18px;
+  box-shadow:var(--shadow);border:1px solid var(--line);
+}
+.logo-badge img{height:clamp(96px,26vw,140px);width:auto;display:block;mix-blend-mode:multiply}
+.sub{margin-top:10px;color:var(--muted);font-size:1rem}
+.tabs{
+  display:flex;gap:8px;padding:6px;border-radius:999px;
+  background:var(--card);border:1px solid var(--line);width:100%;max-width:520px;
+}
+.tab{
+  flex:1;border:0;cursor:pointer;padding:12px 10px;border-radius:999px;
+  font:inherit;font-size:.92rem;font-weight:600;color:var(--muted);
+  background:transparent;transition:all .25s ease;
+}
+.tab[aria-selected="true"]{
+  color:#fff;background:linear-gradient(90deg,var(--accent),var(--accent2));
+  box-shadow:0 8px 20px -8px var(--accent);
+}
+.card{
+  width:100%;background:var(--card);border:1px solid var(--line);
+  border-radius:28px;padding:36px 26px 30px;box-shadow:var(--shadow);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  text-align:center;animation:pop .5s ease;
+}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.avatar{
+  width:140px;height:140px;margin:0 auto;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:3.4rem;background:linear-gradient(135deg,var(--accent2),var(--accent));
+  padding:5px;box-shadow:0 14px 30px -12px var(--accent);overflow:hidden;color:#fff;
+}
+.avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;border:4px solid var(--card)}
+.to{margin-top:18px;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.name{
+  font-family:"Dancing Script","Brush Script MT",cursive;
+  font-size:clamp(2rem,7vw,3rem);color:var(--accent);margin-top:4px;line-height:1.2;
+}
+.divider{width:64px;height:3px;border-radius:3px;margin:18px auto;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.wish{
+  min-height:150px;display:flex;align-items:center;justify-content:center;
+  font-size:clamp(1.05rem,3.6vw,1.25rem);line-height:1.75;padding:0 4px;
+}
+.wish span{animation:fade .6s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.dots{display:flex;justify-content:center;gap:8px;margin:18px 0 22px;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--line);border:0;padding:0;cursor:pointer;transition:all .25s}
+.dot.on{width:26px;border-radius:9px;background:var(--accent)}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{
+  border:0;cursor:pointer;font:inherit;font-weight:600;font-size:.95rem;
+  padding:13px 24px;border-radius:999px;transition:transform .15s ease;
+}
+.btn:active{transform:scale(.96)}
+.primary{color:#fff;background:linear-gradient(90deg,var(--accent),var(--accent2));box-shadow:0 10px 24px -10px var(--accent)}
+.ghost{color:var(--accent);background:transparent;border:1.5px solid var(--accent)}
+.gallery{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));
+  gap:10px;margin-top:28px;
+}
+.gallery:empty{display:none}
+.gallery img{
+  width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;cursor:zoom-in;
+  border:2px solid var(--line);transition:transform .25s ease;animation:pop .5s ease;
+}
+.gallery img:hover{transform:scale(1.04) rotate(-1deg)}
+.sign{margin-top:26px;color:var(--muted);font-size:.9rem}
+.sign b{font-family:"Dancing Script","Brush Script MT",cursive;font-size:1.5rem;color:var(--accent);font-weight:700}
+footer{color:var(--muted);font-size:.82rem;text-align:center}
+.lightbox{
+  position:fixed;inset:0;z-index:20;background:#000c;
+  display:flex;align-items:center;justify-content:center;padding:24px;cursor:zoom-out;
+}
+.lightbox[hidden]{display:none}
+.lightbox img{max-width:100%;max-height:100%;border-radius:18px;box-shadow:0 20px 60px #000a}
+.heart{position:fixed;font-size:22px;pointer-events:none;z-index:5;animation:rise 1.4s ease-out forwards}
+@keyframes rise{
+  0%{opacity:1;transform:translate(-50%,0) scale(.6)}
+  100%{opacity:0;transform:translate(calc(-50% + var(--hx)),-140px) scale(1.4)}
+}
+@media (prefers-reduced-motion:reduce){
+  .petal,.card,.wish span,.heart,.gallery img{animation:none}
+}

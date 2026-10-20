@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chúc mừng 20/10</title>
+<meta name="theme-color" content="#014675">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Dancing+Script:wght@600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="petals" aria-hidden="true"></div>
+<main>
+  <header>
+    <div class="logo-badge"><img src="images/logo.png" alt="ETAP Club"></div>
+    <span class="date" id="date"></span>
+    <h1 id="title"></h1>
+    <p class="sub" id="subtitle"></p>
+  </header>
+
+  <div class="tabs" role="tablist" id="tabs"></div>
+
+  <section class="card" id="card" aria-live="polite">
+    <div class="avatar" id="avatar"></div>
+    <div class="to">Gửi tặng</div>
+    <h2 class="name" id="name"></h2>
+    <div class="divider"></div>
+    <p class="wish" id="wish"></p>
+    <div class="dots" id="dots"></div>
+    <div class="actions">
+      <button class="btn ghost" id="prev" type="button">‹ Trước</button>
+      <button class="btn primary" id="next" type="button">Lời chúc tiếp theo ›</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <p class="sign">Thân tặng, <b id="from"></b></p>
+  </section>
+
+  <footer id="footer"></footer>
+</main>
+
+<div class="lightbox" id="lightbox" hidden>
+  <img id="lightboxImg" alt="">
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
