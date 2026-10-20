@@ -1,4 +1,5 @@
 :root{
+  --font-display:"Great Vibes","Brush Script MT",cursive;--fs:1.2;
   --bg1:#f4f8fc;--bg2:#d9e7f3;--card:#ffffffe6;--ink:#12191e;--muted:#4f6b82;
   --accent:#014675;--accent2:#2f84c4;--line:#c3d6e8;--shadow:0 20px 50px -22px #01467599;
   box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
@@ -44,10 +45,10 @@ header{text-align:center;display:flex;flex-direction:column;align-items:center}
   font-size:.85rem;font-weight:600;letter-spacing:.12em;color:var(--accent);
 }
 h1{
-  font-family:"Dancing Script","Brush Script MT",cursive;
-  font-size:clamp(2.6rem,9vw,4.6rem);line-height:1.1;margin-top:14px;
+  font-family:var(--font-display);font-weight:400;
+  font-size:calc(clamp(2.6rem,9vw,4.6rem)*var(--fs));line-height:1.15;margin-top:14px;
   background:linear-gradient(90deg,var(--accent),var(--accent2));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-background-clip:text;background-clip:text;color:transparent;padding:.08em .1em;
 }
 .logo-badge{
   display:inline-flex;align-items:center;justify-content:center;
@@ -85,8 +86,8 @@ h1{
 .avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;border:4px solid var(--card)}
 .to{margin-top:18px;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .name{
-  font-family:"Dancing Script","Brush Script MT",cursive;
-  font-size:clamp(2rem,7vw,3rem);color:var(--accent);margin-top:4px;line-height:1.2;
+  font-family:var(--font-display);font-weight:400;
+  font-size:calc(clamp(2rem,7vw,3rem)*var(--fs));color:var(--accent);margin-top:4px;line-height:1.25;
 }
 .divider{width:64px;height:3px;border-radius:3px;margin:18px auto;background:linear-gradient(90deg,var(--accent),var(--accent2))}
 .wish{
@@ -117,7 +118,7 @@ h1{
 }
 .gallery img:hover{transform:scale(1.04) rotate(-1deg)}
 .sign{margin-top:26px;color:var(--muted);font-size:.9rem}
-.sign b{font-family:"Dancing Script","Brush Script MT",cursive;font-size:1.5rem;color:var(--accent);font-weight:700}
+.sign b{font-family:var(--font-display);font-size:calc(1.5rem*var(--fs));color:var(--accent);font-weight:400}
 footer{color:var(--muted);font-size:.82rem;text-align:center}
 .lightbox{
   position:fixed;inset:0;z-index:20;background:#000c;
