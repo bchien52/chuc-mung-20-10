@@ -89,6 +89,7 @@ h1{
 .name{
   font-family:var(--font-display);font-weight:400;
   font-size:calc(clamp(2rem,7vw,3rem)*var(--fs));color:var(--accent);margin-top:4px;line-height:1.25;
+  -webkit-text-stroke:.03em var(--accent);
 }
 .divider{width:64px;height:3px;border-radius:3px;margin:18px auto;background:linear-gradient(90deg,var(--accent),var(--accent2))}
 .wish{
