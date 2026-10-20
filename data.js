@@ -18,7 +18,9 @@ window.SITE={
         "Chúc Quỳnh có một ngày 20/10 thật hạnh phúc, lúc mô cũng rạng rỡ, vui vẻ và luôn gặp những điều tốt đẹp nhé",
         "Chúc bạn Quỳnh 20/10 luôn vui vẻ, may mắn, sức khoẻ và thuận lợi trong công việc, học tập🌷",
         "Em chúc chị Quỳnh 20/10 vui vẻ ngày càng xinh đẹp, học giỏi và đạt được những điều ước muốn nha chị",
-        "Chúc Quỳnh 20/10 luôn sống vui sống khoẻ sống chill"
+        "Chúc Quỳnh 20/10 luôn sống vui sống khoẻ sống chill",
+        "Chúc các nữ kỹ sư tương lai luôn mang trong mình tinh thần ETAP (E - Empowered, T - Talented, A - Ambitious, P - Passionate). Chúc các bạn luôn xinh đẹp, tự tin, học giỏi và sớm trở thành những nữ kỹ sư tài năng trong tương lai nhé",
+        "Chúc Quỳnh 20/10 tràn ngập niềm vui, hạnh phúc. Mong rằng thời gian tới sẽ thuận lợi với Quỳnh và gặt hái càng nhiều thành tựu hơn"
       ]
     },
     {
@@ -33,7 +35,8 @@ window.SITE={
         "Chúc My 20/10 thật vui vẻ, luôn xinh đẹp, mạnh khỏe và gặp thật nhiều may mắn trong cuộc sống nha",
         "Chúc My 20/10 luôn vui vẻ, may mắn, sức khoẻ và thuận lợi trong công việc, học tập🌷",
         "Chúc My 20/11 vui vẻ hạnh phúc ngày càng đẹp gái, học giỏi hơn và đạt được những điều mơ ước nha",
-        "Chúc My 20/10 luôn hoạt động tích cực, tiếp nối câu chuyện ETAP Club."
+        "Chúc My 20/10 luôn hoạt động tích cực, tiếp nối câu chuyện ETAP Club.",
+        "Chúc em My 20/10 vui vẻ, hạnh phúc. Chúc cho em My thời gian tới học ngày càng giỏi, hoạt động ngày càng sôi nổi và thành công hơn nữa."
       ]
     }
   ]
