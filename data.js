@@ -11,7 +11,7 @@ window.SITE={
       tab:"Diễm Quỳnh",
       flower:"🌸",
       photo:"images/quynh.jpg",
-      gallery:["images/quynh-1.jpg","images/quynh-2.jpg","images/quynh-3.jpg"],
+      gallery:["images/quynh-1.jpg","images/quynh.jpg","images/quynh-3.jpg"],
       wishes:[
         "Chúc Quỳnh 20/10 thật vui vẻ và luôn nhiều sức khỏe. Chúc cậu giữ vững phong độ đẳng cấp thợ thầy.",
         "Chúc Quỳnh 20/10 vui vẻ, mạnh khoẻ. Luôn giữ vững ngọn lửa đam mê bớt áp lực thí nghiệm và luôn hạnh phúc với những gì mình đang theo đuổi.",
