@@ -1,5 +1,5 @@
 window.SITE={
-  sender:"ETAP CLUB",
+  sender:"Etap Club",
   date:"20 - 10 - 2026",
   title:"Chúc mừng ngày Phụ nữ Việt Nam",
   subtitle:"Gửi những lời chúc chân thành đến hai người đặc biệt",
@@ -26,7 +26,7 @@ window.SITE={
       tab:"Hoàng My",
       flower:"🌷",
       photo:"images/my.jpg",
-      gallery:["images/my-1.jpg"],
+      gallery:["images/my.jpg"],
       wishes:[
         "Chúc em ngày 20/10 thật vui vẻ, luôn mạnh khỏe và ngập tràn niềm vui! Chúc em học tốt và vượt vũ môn Lý thuyết cơ sở mạch",
         "Chúc My 20/10 thật nhiều niềm vui, ngày càng mạnh khoẻ, học tập tốt. Luôn nỗ lực hết mình và không bao giờ hối hận theo đuổi con đường mình chọn.",
