@@ -11,7 +11,7 @@ window.SITE={
       tab:"Diễm Quỳnh",
       flower:"🌸",
       photo:"images/quynh.jpg",
-      gallery:["images/quynh.jpg","images/quynh1.png","images/quynh2.png","images/quynh3.png"],
+      gallery:[],
       wishes:[
         "Chúc Quỳnh 20/10 thật vui vẻ và luôn nhiều sức khỏe. Chúc cậu giữ vững phong độ đẳng cấp thợ thầy.",
         "Chúc Quỳnh 20/10 vui vẻ, mạnh khoẻ. Luôn giữ vững ngọn lửa đam mê bớt áp lực thí nghiệm và luôn hạnh phúc với những gì mình đang theo đuổi.",
@@ -29,7 +29,7 @@ window.SITE={
       tab:"Hoàng My",
       flower:"🌷",
       photo:"images/my.jpg",
-      gallery:["images/my.jpg"],
+      gallery:[],
       wishes:[
         "Chúc em ngày 20/10 thật vui vẻ, luôn mạnh khỏe và ngập tràn niềm vui! Chúc em học tốt và vượt vũ môn Lý thuyết cơ sở mạch",
         "Chúc My 20/10 thật nhiều niềm vui, ngày càng mạnh khoẻ, học tập tốt. Luôn nỗ lực hết mình và không bao giờ hối hận theo đuổi con đường mình chọn.",
